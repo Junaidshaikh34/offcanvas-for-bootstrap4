@@ -1,0 +1,58 @@
+<!-- onclick of toggle-drawer class, get data-drawer value and add class active on the element having id equal to that data-drawer value-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex gap-2 px-3 mt-3">
+      <a
+        data-drawer="demos"
+        href="#/"
+        class="toggle-drawer shadow-sm bg-white py-1 px-3 rounded-bottom text-decoration-none text-nowrap"
+      >
+        Demos
+      </a>
+      <a
+        data-drawer="help"
+        href="#/"
+        class="toggle-drawer shadow-sm bg-white py-1 px-3 rounded-bottom text-decoration-none text-nowrap"
+      >
+        Help
+      </a>
+      <a
+        data-drawer="buynow"
+        href="#/"
+        class="toggle-drawer shadow-sm bg-white py-1 px-3 rounded-bottom text-decoration-none text-nowrap"
+      >
+        Buy Now
+      </a>
+    </div>
+    <div id="demos" class="drawer bg-white">
+      <a href="#/" data-drawer="demos" class="toggle-drawer">
+        X
+        <div>demos</div>
+      </a>
+    </div>
+    <div id="help" class="drawer bg-white">
+      <a href="#/" data-drawer="help" class="toggle-drawer">
+        X
+        <div>help</div>
+      </a>
+    </div>
+    <div id="buynow" class="drawer bg-white">
+      <a href="#/" data-drawer="buynow" class="toggle-drawer">
+        X
+        <div>buynow</div>
+      </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="custom.js"></script>
+  </body>
+</html>

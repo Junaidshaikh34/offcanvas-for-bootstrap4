@@ -1,0 +1,32 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+$drawer-width: 350px;
+
+
+.drawer-overlay {
+      &::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.2);
+        // animation: animation-drawer-fade-in 0.3s ease-in 1;
+      }
+  }
+.drawer {
+    width: $drawer-width;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    transition: all 250ms ease-out;
+    margin-right: -$drawer-width;
+
+    &.active {
+        margin-right: 0;
+    }
+}
